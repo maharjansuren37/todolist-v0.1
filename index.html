@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to do list</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/3a77b54763.js" crossorigin="anonymous"></script>
+    <!-- styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <main class="main">
+            <!-- time and calender -->
+
+            <div id="time" class="time">
+            </div>
+
+            <!-- task input -->
+            <div class="input">
+                <h1 class="title">To Do List</h1>
+                <form class="form" id="form">
+                    <input type="text" id="task" autocomplete="off" placeholder="add a task">
+                    <div class="btns">
+                        <button type="submit" class="btn add-btn">Add Task</button>
+                        <button class="btn update-btn">Update Task</button>
+                        <button class="btn delete-btn">Delete</button>
+                        <button class="btn back-btn">Cancel</button>
+                    </div>
+                </form>
+            </div>
+            <!-- filter tasks -->
+            <div class="filter">
+                <input type="text" id="filter" class="filter" placeholder="filter tasks">
+            </div>
+            
+            <!-- task output -->
+            <div class="output">
+                <h2>Tasks</h2>
+                <hr>
+                <ul class="collection" role="list"></ul>
+            </div>
+
+            <button id="clear-tasks" class="btn clear-btn">Clear Tasks</button>
+        </main>
+    </div>
+   
+    <script src="app.js"></script>
+</body>
+</html>
